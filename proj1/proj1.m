@@ -26,7 +26,7 @@ w = [0:100:1000000];
 	%v0 = mag(3,2:length(w)+1);
 
 	F=20*log10(v0);
-
+F = 0;
 semilogx(w,F);  grid;
 xlabel('frequency (rads/sec)');
 ylabel('Amplitude (dB');
