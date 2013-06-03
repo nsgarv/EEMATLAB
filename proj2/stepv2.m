@@ -1,18 +1,18 @@
-
+clear all;
 syms R1 R2 R3 R4 R5
 syms C1 C2
 syms s t
 
-r1 = 5000;
-r2 = 5000;
-r3 = 400;
-r4 =1000;
+r1 = 1000;
+r2 = 1000;
+r3 = 1000;
+r4 = 1000;
 r5 = 1000;
 c1 = .1e-6;
 c2 = .1e-6;
 
 M = [1/R1+1/R2+1/R3+C1*s, -1/R3, -C1*s; -1/R3, 1/R3+C2*s, 0; 0, 1/R4+1/R5, -1/R4];
-S = [1/s*R1; 0; 0];
+S = [1/(s*R1); 0; 0];
 
 X = M\S;
 %X outputs v1(2), v2(s), v0(3)
@@ -25,7 +25,7 @@ v1 = x(1);
 v2 = x(2);
   
 % Calculate transient response
-tt = [0: .1 : 5];
+tt = [0: 1e-5 : .0025];
  
 for i = 1:length(tt) 
     v1n (i) = subs ( v2 , {t} , {tt(i)});
@@ -73,7 +73,7 @@ v1 = x(1);
 v2 = x(2);
  
 % Calculate transient response
-tt = [0: 1e-4 : .001];
+tt = [0: .1 : 5];
  
 for i = 1:length(tt) 
     v1n (i) = subs ( v2 , {t} , {tt(i)});
