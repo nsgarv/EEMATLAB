@@ -1,8 +1,7 @@
-
 %Nathan Garvey and Jaster Tan
 %ELEN 100 2013
 %transient analysis of a circuit
-%given physical values
+% values give peak overshot of 4.3%
 
 clear all;
 syms R1 R2 R3 R4 R5

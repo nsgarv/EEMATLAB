@@ -1,10 +1,9 @@
-clear all;
-
 %Nathan Garvey and Jaster Tan
-%ELEN 100 2013
-%transient analysis of a circuit
-%given physical values
+%ELEN 100 2015
+%Problem 2
+%transient analysis of a circuit given physical values
 
+clear all;
 syms R1 R2 R3 R4 R5
 syms C1 C2
 syms s t
