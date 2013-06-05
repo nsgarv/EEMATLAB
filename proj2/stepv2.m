@@ -40,6 +40,6 @@ end;
  
 % Plotting
 figure(1);
-plot(tt,v0n,'g',tt,v1n,'b',tt,v2n,'r'); grid on; title('Step Response');
+plot(tt,v0n,'-k', 'LineWidth', 2); grid on; title('Step Response');
 legend('V_o = Voutput');xlabel('Time [s] '); ylabel('Vo [V]');
 grid on; 

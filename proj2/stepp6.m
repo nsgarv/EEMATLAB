@@ -41,6 +41,6 @@ end;
  
 % Plotting
 figure(1);
-plot(tt,v0n,'g',tt,v1n,'b',tt,v2n,'r'); grid on; title('Step Response R1 = R2 = 1.2k\Omega  R3 = 838\Omega, R4 = R5 = 1k\Omega');
+plot(tt,v0n,'-k', 'LineWidth', 2); grid on; title('Step Response R1 = R2 = 1.2k\Omega  R3 = 838\Omega, R4 = R5 = 1k\Omega');
 legend('V_o = Voutput');xlabel('Time [s] '); ylabel('Vo [V]');
 grid on; 
